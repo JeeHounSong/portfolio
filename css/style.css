@@ -40,7 +40,7 @@ html {
     font-size: 18px;
 }
 #navTop_box #topMenu li >a.active {
-    color: pink; border-bottom: 3px solid pink;
+    color: #426DE8; border-bottom: 3px solid #426DE8;
     font-weight: bold; padding-bottom: 4px;
 }
 /* 공통 */
@@ -54,18 +54,20 @@ html {
     background-size: cover;
 }
 .s0>.section_home>h1 {
-    color: #fff; font-size: 130px;
+    color: #00185c; font-size: 130px;
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Bodoni Moda', serif;
 }
 /* s1 프로파일 */
 /* profile */
 .s1 {
-    background-color: lightgreen;
+    background: url(../portfolio/Artboard\ 2.png) no-repeat center center;
+    background-size: cover;
 }
 .pr_container {
-    display: flex; width: 80%; margin: auto;
-    padding-top: 150px;
+    display: flex; width: 75%; margin: auto;
+    padding-top: 200px;
     gap: 20px;
 }
 .pr_profile {
@@ -73,14 +75,14 @@ html {
     padding-left: 60px;
 }
 .pr_profile>ul {
-    margin-top: 20px;
-    border-left: 7px solid pink;
+    margin-top: 80px;
+    border-left: 5px solid #426DE8;
 }
 .pr_profile>ul>li {
     padding-left: 30px; line-height: 30px;
 }
 .pr_profile>ul>li>i {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 /* right box */
 .right_box {
@@ -90,7 +92,7 @@ html {
     justify-content: space-between;
 }
 .pr_title {
-    border-left: 3px solid pink;
+    border-left: 3px solid #426DE8;
     padding-left: 10px;
 }
 .pr_date {
@@ -107,8 +109,8 @@ html {
 }
 /* contact */
 .ct_inbox {
-    padding: 20px; background: #eee;
-    border: 5px double #ccc;
+    padding: 20px; background: rgb(251, 249, 255);
+    border: 4px double #426DE8;
     margin-top: 100px;
 }
 .ct_title {
@@ -116,19 +118,22 @@ html {
 }
 .ct_txt {
     display: flex;
-    width: 90%; margin: auto;
-    margin-top: 20px;
+    width: 100%; margin: auto;
+    margin-top: 10px;
+    font-size: 13px;
 }
 .ct_txt>ul {
     flex: 1;
     text-align: center;
-    line-height: 50px;
+    line-height: 25px;
 }
 .ct_txt>ul>li>img {
     width: 50px; height: 50px;
 }
 /* s2 포트폴리오 영역 */
 .s2 {
+    background: url(../portfolio/Artboard\ 3.png) no-repeat center center;
+    background-size: cover;
     background-color: lightyellow;
     width: 100%;
     position: relative;
@@ -160,10 +165,10 @@ html {
     top: 18vh;
 }
 .slide .pf_txt_container .pf_title {
-    width: 50%; height: 50px;
+    width: 40%; height: 50px;
     margin: auto;
-    border-radius: 10px;
-    background: #eee;
+    border-radius: 50px;
+    background: #ecf1ff;
     line-height: 50px; text-align: center;
 }
 .slide .pf_txt_container table {
@@ -197,11 +202,11 @@ html {
     transition: 0.5s;
 }
 .pf_gosite a:hover {
-    color: #fff; border: 1px solid pink;
+    color: #fff; border: 1px solid #426DE8;
 }
 .pf_gosite a:before {
     content: ""; z-index: -1;
-    position: absolute; background: pink;
+    position: absolute; background: #426DE8;
     transition: 1s;
     left: 50%; top: 0;
     transform: translateX(-50%);
@@ -230,6 +235,10 @@ html {
         width: 90%; flex-direction: column;
         padding-top: 100px;
     }
+    .pr_profile>div>img {
+        width: 190px;
+    }
+
     .pr_profile>div {
         float: left;
     }
@@ -269,6 +278,9 @@ html {
     }
     .left_arrow, .right_arrow {
         width: 30px;
+    }
+    .slide .pf_txt_container .pf_title {
+        width: 50%; height: 50px;
     }
 }
 
@@ -360,11 +372,11 @@ html {
         float: none;
     }
     .pr_txt {
-        width: 50%;
+        width: 100%;
         font-size: 12px;
         float: none;
         font-weight: normal;
-        padding-left: 40px;
+        padding-left: 20px;
     }
     .edu_txt>div {
         font-weight: normal;
@@ -375,7 +387,7 @@ html {
     .ct_box {
         width: 92%;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 10px;
     }
     .ct_title {
         font-size: 14px;
@@ -387,11 +399,11 @@ html {
     .ct_txt>ul {
         width: 74%;
         margin: auto;
-        line-height: 2;
+        line-height: 1;
     }
     .ct_txt>ul>li {
         float:left;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
         padding-left: 10px;
     }    
@@ -409,7 +421,7 @@ html {
         margin: 0px 35px;
     }
     .slide>.image {
-        width: 82%;
+        width: 80%;
         position: relative;
         top: 5vh;
     }
@@ -419,21 +431,22 @@ html {
         width: 80%;
     }
     .slide .pf_txt_container .pf_title {
-        height: 35px;
-        line-height: 35px;
-        font-size: 16px;
+        width: 70%;
+        height: 30%;
+        line-height: 20px;
+        font-size: 14px;
     }
     .slide .pf_txt_container table {
         width: 95%;
         margin: auto;
         line-height: 1.5;
-        font-size: 13px;
-        margin-top: 10px;
+        font-size: 10px;
+        margin-top: 30px;
     }
     .pf_gosite {
         width: 50%;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 30px;
     }
     .pf_gosite a {
         width: 100%;
@@ -443,4 +456,5 @@ html {
     .left_arrow, .right_arrow {
         width: 20px; top: 30%;
     }
+    
 }
